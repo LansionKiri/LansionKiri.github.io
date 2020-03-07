@@ -24,7 +24,7 @@ const ap = new APlayer({
         cover: 'http://p1.music.126.net/W_5XiCv3rGS1-J7EXpHSCQ==/18885211718782327.jpg?param=130y130',
 	},
 	{
-		name: "演员",
+		name: "你还要我怎样",
         artist: '薛之谦',
         url: 'http://m10.music.126.net/20200308005026/0751ab939ea15d822905c397b5728823/ymusic/25b9/3a30/8c18/a293afa71168120a616434a2a21d97ef.mp3',
         cover: 'http://p1.music.126.net/W_5XiCv3rGS1-J7EXpHSCQ==/18885211718782327.jpg?param=130y130',
