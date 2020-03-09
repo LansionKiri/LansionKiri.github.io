@@ -2,6 +2,9 @@ const ap = new APlayer({
     container: document.getElementById('aplayer'),
     fixed: true,
     autoplay: true,
+	loop: 'all',
+    order: 'random',
+    preload: 'auto',
     audio: [
       {
         name: "演员",
