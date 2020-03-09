@@ -5,9 +5,9 @@
   <subtitle>我又要到物业去告你</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="lasion.top/"/>
+  <link href="http://lasion.top/"/>
   <updated>2020-03-07T12:14:08.628Z</updated>
-  <id>lasion.top/</id>
+  <id>http://lasion.top/</id>
   
   <author>
     <name>Lasion</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>python实现基本的矩阵运算</title>
-    <link href="lasion.top/python%E7%9F%A9%E9%98%B5%E8%BF%90%E7%AE%97.html"/>
-    <id>lasion.top/python%E7%9F%A9%E9%98%B5%E8%BF%90%E7%AE%97.html</id>
+    <link href="http://lasion.top/2020/03/07/python%E7%9F%A9%E9%98%B5%E8%BF%90%E7%AE%97.xml"/>
+    <id>http://lasion.top/2020/03/07/python%E7%9F%A9%E9%98%B5%E8%BF%90%E7%AE%97.xml</id>
     <published>2020-03-07T07:38:14.319Z</published>
     <updated>2020-03-07T12:14:08.628Z</updated>
     
@@ -32,23 +32,23 @@
     </summary>
     
     
-      <category term="机器学习的数学基础" scheme="lasion.top/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+      <category term="机器学习的数学基础" scheme="http://lasion.top/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="机器学习" scheme="lasion.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="机器学习" scheme="http://lasion.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="线性代数" scheme="lasion.top/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+      <category term="线性代数" scheme="http://lasion.top/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
     
-      <category term="python" scheme="lasion.top/tags/python/"/>
+      <category term="python" scheme="http://lasion.top/tags/python/"/>
     
-      <category term="矩阵" scheme="lasion.top/tags/%E7%9F%A9%E9%98%B5/"/>
+      <category term="矩阵" scheme="http://lasion.top/tags/%E7%9F%A9%E9%98%B5/"/>
     
   </entry>
   
   <entry>
     <title>python实现基本的矩阵运算</title>
-    <link href="lasion.top/python%E6%B1%82%E7%9F%A9%E9%98%B5%E7%9A%84%E9%80%86.html"/>
-    <id>lasion.top/python%E6%B1%82%E7%9F%A9%E9%98%B5%E7%9A%84%E9%80%86.html</id>
+    <link href="http://lasion.top/2020/03/07/python%E6%B1%82%E7%9F%A9%E9%98%B5%E7%9A%84%E9%80%86.xml"/>
+    <id>http://lasion.top/2020/03/07/python%E6%B1%82%E7%9F%A9%E9%98%B5%E7%9A%84%E9%80%86.xml</id>
     <published>2020-03-07T07:38:14.319Z</published>
     <updated>2020-03-09T00:28:04.294Z</updated>
     
@@ -61,23 +61,23 @@
     </summary>
     
     
-      <category term="机器学习的数学基础" scheme="lasion.top/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+      <category term="机器学习的数学基础" scheme="http://lasion.top/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="机器学习" scheme="lasion.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="机器学习" scheme="http://lasion.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="线性代数" scheme="lasion.top/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+      <category term="线性代数" scheme="http://lasion.top/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
     
-      <category term="python" scheme="lasion.top/tags/python/"/>
+      <category term="python" scheme="http://lasion.top/tags/python/"/>
     
-      <category term="矩阵" scheme="lasion.top/tags/%E7%9F%A9%E9%98%B5/"/>
+      <category term="矩阵" scheme="http://lasion.top/tags/%E7%9F%A9%E9%98%B5/"/>
     
   </entry>
   
   <entry>
     <title>python实现基本的矩阵运算</title>
-    <link href="lasion.top/%E5%85%8B%E8%8E%B1%E5%A7%86%E6%B3%95%E5%88%99.html"/>
-    <id>lasion.top/%E5%85%8B%E8%8E%B1%E5%A7%86%E6%B3%95%E5%88%99.html</id>
+    <link href="http://lasion.top/2020/03/07/%E5%85%8B%E8%8E%B1%E5%A7%86%E6%B3%95%E5%88%99.xml"/>
+    <id>http://lasion.top/2020/03/07/%E5%85%8B%E8%8E%B1%E5%A7%86%E6%B3%95%E5%88%99.xml</id>
     <published>2020-03-07T07:38:14.319Z</published>
     <updated>2020-03-09T03:54:22.759Z</updated>
     
@@ -90,16 +90,16 @@
     </summary>
     
     
-      <category term="机器学习的数学基础" scheme="lasion.top/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
+      <category term="机器学习的数学基础" scheme="http://lasion.top/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/"/>
     
     
-      <category term="机器学习" scheme="lasion.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="机器学习" scheme="http://lasion.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="线性代数" scheme="lasion.top/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+      <category term="线性代数" scheme="http://lasion.top/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
     
-      <category term="python" scheme="lasion.top/tags/python/"/>
+      <category term="python" scheme="http://lasion.top/tags/python/"/>
     
-      <category term="矩阵" scheme="lasion.top/tags/%E7%9F%A9%E9%98%B5/"/>
+      <category term="矩阵" scheme="http://lasion.top/tags/%E7%9F%A9%E9%98%B5/"/>
     
   </entry>
   
