@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://lasion.top/title.xml</loc>
+    
+    <lastmod>2020-03-10T14:58:10.263Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://lasion.top/tags/index.html</loc>
     
     <lastmod>2020-03-09T11:31:00.242Z</lastmod>
