@@ -218,7 +218,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-03-10 18:10:09 / 修改时间：22:58:10" itemprop="dateCreated datePublished" datetime="2020-03-10T18:10:09+08:00">2020-03-10</time>
+              <time title="创建时间：2020-03-10 18:10:09 / 修改时间：23:07:27" itemprop="dateCreated datePublished" datetime="2020-03-10T18:10:09+08:00">2020-03-10</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -250,7 +250,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>6.8k</span>
+              <span>6.7k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -297,9 +297,9 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(type(<span class="literal">True</span>),<span class="string">':'</span>,<span class="literal">True</span>)</span><br><span class="line">print(<span class="number">2</span>&gt;<span class="number">3</span>)</span><br></pre></td></tr></table></figure>
 <p>输出：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;class &#39;bool&#39;&gt; : True</span><br><span class="line">False</span><br></pre></td></tr></table></figure>
-<p><strong>==注：python严格区分大小写，True与False第一位均为大写！==</strong></p>
+<p><strong>注：python严格区分大小写，True与False第一位均为大写！</strong></p>
 <h4 id="真值测试"><a href="#真值测试" class="headerlink" title="真值测试"></a>真值测试</h4><blockquote>
-<p><strong>&nbsp;&nbsp;注意啦！！！！！！！！！！！！！！！！！！<br>这里着重强调！！python的真值判断！！！！==与众不同==！！！<br>首先说在python中，==万物皆可Boolean！！！！==<br>这句话的意思是，无论是python的==内置对象==还是==自定义类==的对象都可转换成Booelan值，也就是说，==都有对应的真值==！！！！！！！</strong></p>
+<p><strong>&nbsp;&nbsp;注意啦！！！！！！！！！！！！！！！！！！<br>这里着重强调！！python的真值判断！！！！与众不同！！！<br>首先说在python中，万物皆可Boolean！！！！<br>这句话的意思是，无论是python的内置对象还是自定义类的对象都可转换成Booelan值，也就是说，都有对应的真值！！！！！！！</strong></p>
 </blockquote>
 <p><strong>python 官方文档镇楼！！！！！！！！！！！！！！！！！</strong></p>
 <blockquote>
@@ -316,16 +316,15 @@
 </blockquote>
 <p>看不懂木得关系，我给大家解释一下：</p>
 <p>​        <strong>他就是说，python中所有的对象都有真值，都能放在<code>if</code>或<code>while</code>语句中</strong></p>
-<p>​        <strong>然而，他们的真值是怎么来的呢？原来python类中有这么两个==魔术方法==（魔术方法我个人感觉类似于java中的<code>toString()</code>方法，就是会隐式调用）——一个是返回布尔类型的<code>__bool__()</code>方法，一个呢是返回整形的<code>_len_()</code>方法（很显然，返回长度！）；那么就是靠这两个方法，只需要看他们的返回值就能决定对象的真值（返回<code>0</code> 或<code>False</code>假，<code>1</code>或<code>True</code>为真）</strong></p>
+<p>​        <strong>然而，他们的真值是怎么来的呢？原来python类中有这么两个魔术方法（魔术方法我个人感觉类似于java中的<code>toString()</code>方法，就是会隐式调用）——一个是返回布尔类型的<code>__bool__()</code>方法，一个呢是返回整形的<code>_len_()</code>方法（很显然，返回长度！）；那么就是靠这两个方法，只需要看他们的返回值就能决定对象的真值（返回<code>0</code> 或<code>False</code>假，<code>1</code>或<code>True</code>为真）</strong></p>
 <p>​        <strong>还有除了一下几种为Fasle的情况，剩下的都为True:</strong></p>
 <ul>
 <li><strong>定义为false的常量：<code>None</code>和<code>False</code>。</strong></li>
 <li><strong>任何为零的数值类型：<code>0</code>，<code>0.0</code>，<code>0j</code>，<code>Decimal(0)</code>， <code>Fraction(0, 1)</code></strong></li>
 <li><strong>空序列和集合：<code>&#39;&#39;</code>，<code>()</code>，<code>[]</code>，<code>{}</code>，<code>set()</code>， <code>range(0)</code></strong></li>
 </ul>
-<p><strong>==稍微总结一下就是：非假即真！一切与0有关的都为假（比如数值0，长度为0）==</strong></p>
+<p><strong>稍微总结一下就是：非假即真！一切与0有关的都为假（比如数值0，长度为0）</strong></p>
 <p><strong>两个魔术方法的官方文档再次镇楼！！！！！！！！</strong></p>
-<p>&gt;<br>&gt;</p>
 <blockquote>
 <p><code>object.``__bool__</code>(<em>self</em>)</p>
 <p>Called to implement truth value testing and the built-in operation <code>bool()</code>; should return <code>False</code> or <code>True</code>. When this method is not defined, <code>__len__()</code> is called, if it is defined, and the object is considered true if its result is nonzero. If a class defines neither <code>__len__()</code> nor <code>__bool__()</code>, all its instances are considered true.</p>
@@ -334,7 +333,7 @@
 <p><strong>CPython implementation detail:</strong> In CPython, the length is required to be at most <a href="https://docs.python.org/3/library/sys.html#sys.maxsize" target="_blank" rel="noopener"><code>sys.maxsize</code></a>. If the length is larger than <code>sys.maxsize</code> some features (such as <a href="https://docs.python.org/3/library/functions.html#len" target="_blank" rel="noopener"><code>len()</code></a>) may raise <a href="https://docs.python.org/3/library/exceptions.html#OverflowError" target="_blank" rel="noopener"><code>OverflowError</code></a>. To prevent raising <code>OverflowError</code> by truth value testing, an object must define a <code>__bool__()</code> method.</p>
 </blockquote>
 <h3 id="列表-List"><a href="#列表-List" class="headerlink" title="列表 List"></a><strong>列表 List</strong></h3><ul>
-<li><strong>序列类型（可迭代，序列表示索引为非负整数的有序对象集合，==字符串也算序列，上面忘说了，嘤嘤嘤==）</strong></li>
+<li><strong>序列类型（可迭代，序列表示索引为非负整数的有序对象集合，字符串也算序列，上面忘说了，嘤嘤嘤）</strong></li>
 <li><strong>可变序列</strong></li>
 <li><strong><code>[data, data, data,...]</code></strong></li>
 </ul>
@@ -368,7 +367,7 @@
 <p>而不是：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">3</span>;</span><br></pre></td></tr></table></figure>
 <p>而且python中不存在<code>x++</code>操作，应使用<code>x += 1</code></p>
-<p>==<strong>还有就是python中存在打包赋值</strong>==</p>
+<p><strong>还有就是python中存在打包赋值</strong></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x, y = <span class="number">1</span>, <span class="number">2</span></span><br><span class="line">print(x, y)</span><br><span class="line">x, y = y, x</span><br><span class="line">print(x, y)</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1 2</span><br><span class="line">2 1</span><br></pre></td></tr></table></figure>
 <p>另外命名最好符合规范，增加代码可读性，像：</p>
@@ -440,7 +439,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1 2 3 4 5</span><br><span class="line">hahaha 你哈哈个锤子 嘤嘤嘤</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><code>format()</code>：格式化输出方法</p>
-<p>==”字符{0: 修饰}字符{1: 修饰}字符.format(v0,v1)”==</p>
+<p>“字符{0: 修饰}字符{1: 修饰}字符.format(v0,v1)”</p>
 <p>可以没有修饰，没有修饰就是将后面的参数填入前面对应的大括号内，v0填进0，v1填进1，如果大括号内没有内容，则默认顺序为0123。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;四是&#123;0&#125;,10是&#123;1&#125;&quot;.format(4, &#39;十&#39;)</span><br></pre></td></tr></table></figure>
 <p>Out[61]:</p>
@@ -456,7 +455,7 @@
 <p>Out[63]:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#39;14是十四,四十是40&#39;</span><br></pre></td></tr></table></figure>
 <p>带修饰的：</p>
-<p>==修饰符优先级，越往上优先级越高：==</p>
+<p>修饰符优先级，越往上优先级越高：</p>
 <ol>
 <li>引导符号 ：</li>
 <li>填充：用于填充的字符如* __等</li>
@@ -490,6 +489,115 @@
 <p>注释分两种</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这叫单行注释</span></span><br><span class="line"></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">这叫多行注释</span></span><br><span class="line"><span class="string">啊！</span></span><br><span class="line"><span class="string">大海啊！</span></span><br><span class="line"><span class="string">你都是水！</span></span><br><span class="line"><span class="string">太累了！</span></span><br><span class="line"><span class="string">告辞！</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
 
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://lasion.top/title.xml">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/header.jpg">
+      <meta itemprop="name" content="Lasion">
+      <meta itemprop="description" content="我就要到物业去告你">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我要到物业去告你">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/title.xml" class="post-title-link" itemprop="url">python求矩阵的逆</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-07 15:38:14" itemprop="dateCreated datePublished" datetime="2020-03-07T15:38:14+08:00">2020-03-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-10 23:08:11" itemprop="dateModified" datetime="2020-03-10T23:08:11+08:00">2020-03-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">机器学习的数学基础</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/title.xml#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/title.xml" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>本文介绍了矩阵的逆定义，并用python实现求矩阵的逆。同时讲到了代数余子式、伴随矩阵。并用python语言实现。其实在numpy中有求矩阵的逆的函数，而本文则是介绍矩阵的逆，并编程自己实现来提高自己的编程水平</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/title.xml#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -625,7 +733,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/title.xml" class="post-title-link" itemprop="url">python实现基本的矩阵运算</a>
+            <a href="/title.xml" class="post-title-link" itemprop="url">python实现克莱姆法则</a>
         </h1>
 
         <div class="post-meta">
@@ -642,7 +750,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-09 11:54:22" itemprop="dateModified" datetime="2020-03-09T11:54:22+08:00">2020-03-09</time>
+                <time title="修改时间：2020-03-10 23:08:24" itemprop="dateModified" datetime="2020-03-10T23:08:24+08:00">2020-03-10</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -694,115 +802,6 @@
 
       
           <p>本文介绍了克莱姆法则，并用pthon进行实现。克莱姆法则，又译克拉默法则（Cramer’s Rule）是线性代数中一个关于求解线性方程组的定理。它适用于变量和方程数目相等的线性方程组，对于多于两个或三个方程的系统，克莱姆的规则在计算上非常低效；与具有多项式时间复杂度的消除方法相比，其渐近的复杂度为O（n·n！）。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/title.xml#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://lasion.top/title.xml">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/header.jpg">
-      <meta itemprop="name" content="Lasion">
-      <meta itemprop="description" content="我就要到物业去告你">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="我要到物业去告你">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/title.xml" class="post-title-link" itemprop="url">python实现基本的矩阵运算</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-03-07 15:38:14" itemprop="dateCreated datePublished" datetime="2020-03-07T15:38:14+08:00">2020-03-07</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-09 08:28:04" itemprop="dateModified" datetime="2020-03-09T08:28:04+08:00">2020-03-09</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">机器学习的数学基础</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/title.xml#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/title.xml" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>3.7k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>本文介绍了矩阵的逆定义，并用python实现求矩阵的逆。同时讲到了代数余子式、伴随矩阵。并用python语言实现。其实在numpy中有求矩阵的逆的函数，而本文则是介绍矩阵的逆，并编程自己实现来提高自己的编程水平</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/title.xml#more" rel="contents">
