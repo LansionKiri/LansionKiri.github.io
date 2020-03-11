@@ -21,7 +21,7 @@ const ap = new APlayer({
       {
         name: '刚刚好',
         artist: '薛之谦',
-        url: 'http://music.163.com/song/media/outer/url?id=415792881.mp3',
+        url: 'http://m10.music.126.net/20200311084222/ef1e8164ab1bb46cf1a15ad034264d2d/ymusic/632f/4aed/a5ac/aa14f1a96651ac1b45a24663b1ec108e.mp3',
         cover: 'http://p1.music.126.net/hti_a0LADoFMBHvOBwAtRA==/1369991500930171.jpg',
       },
       {
