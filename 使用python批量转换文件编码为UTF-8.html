@@ -21,25 +21,20 @@
     var CONFIG = {"hostname":"lasion.top","root":"/","scheme":"Muse","version":"7.7.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
   </script>
 
-  <meta name="description" content="本文介绍了克莱姆法则，并用pthon进行实现。克莱姆法则，又译克拉默法则（Cramer’s Rule）是线性代数中一个关于求解线性方程组的定理。它适用于变量和方程数目相等的线性方程组，对于多于两个或三个方程的系统，克莱姆的规则在计算上非常低效；与具有多项式时间复杂度的消除方法相比，其渐近的复杂度为O（n·n！）。">
+  <meta name="description" content="由于这两天换了IDE，在导入以前的工程的时候发现了一个大问题，由于以前脑残的我不知道改编码方式，导致出现了大量的GBK，这就很难受，要是一个两个还好说，可是这么多要是一个一个的改我会觉得现在的我比以前还脑残，于是乎，我就想用python批量的修改一下，然后就产生了这篇文章，其中好多不足的地方还请大佬指导">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python实现克莱姆法则">
-<meta property="og:url" content="http://lasion.top/%E5%85%8B%E8%8E%B1%E5%A7%86%E6%B3%95%E5%88%99.html">
+<meta property="og:title" content="使用python批量转换文件编码为UTF-8">
+<meta property="og:url" content="http://lasion.top/%E4%BD%BF%E7%94%A8python%E6%89%B9%E9%87%8F%E8%BD%AC%E6%8D%A2%E6%96%87%E4%BB%B6%E7%BC%96%E7%A0%81%E4%B8%BAUTF-8.html">
 <meta property="og:site_name" content="我要到物业去告你">
-<meta property="og:description" content="本文介绍了克莱姆法则，并用pthon进行实现。克莱姆法则，又译克拉默法则（Cramer’s Rule）是线性代数中一个关于求解线性方程组的定理。它适用于变量和方程数目相等的线性方程组，对于多于两个或三个方程的系统，克莱姆的规则在计算上非常低效；与具有多项式时间复杂度的消除方法相比，其渐近的复杂度为O（n·n！）。">
+<meta property="og:description" content="由于这两天换了IDE，在导入以前的工程的时候发现了一个大问题，由于以前脑残的我不知道改编码方式，导致出现了大量的GBK，这就很难受，要是一个两个还好说，可是这么多要是一个一个的改我会觉得现在的我比以前还脑残，于是乎，我就想用python批量的修改一下，然后就产生了这篇文章，其中好多不足的地方还请大佬指导">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://ae01.alicdn.com/kf/Hc6b02e38d7fe46a78ff3a32959efbd823.png">
-<meta property="article:published_time" content="2020-03-07T07:38:14.319Z">
-<meta property="article:modified_time" content="2020-03-10T15:08:24.264Z">
+<meta property="article:published_time" content="2020-04-01T02:14:38.000Z">
+<meta property="article:modified_time" content="2020-04-01T03:02:25.256Z">
 <meta property="article:author" content="Lasion">
 <meta property="article:tag" content="python">
-<meta property="article:tag" content="机器学习">
-<meta property="article:tag" content="线性代数">
-<meta property="article:tag" content="矩阵">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://ae01.alicdn.com/kf/Hc6b02e38d7fe46a78ff3a32959efbd823.png">
 
-<link rel="canonical" href="http://lasion.top/%E5%85%8B%E8%8E%B1%E5%A7%86%E6%B3%95%E5%88%99.html">
+<link rel="canonical" href="http://lasion.top/%E4%BD%BF%E7%94%A8python%E6%89%B9%E9%87%8F%E8%BD%AC%E6%8D%A2%E6%96%87%E4%BB%B6%E7%BC%96%E7%A0%81%E4%B8%BAUTF-8.html">
 
 
 <script id="page-configurations">
@@ -51,7 +46,7 @@
   };
 </script>
 
-  <title>python实现克莱姆法则 | 我要到物业去告你</title>
+  <title>使用python批量转换文件编码为UTF-8 | 我要到物业去告你</title>
   
 
 
@@ -202,7 +197,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://lasion.top/%E5%85%8B%E8%8E%B1%E5%A7%86%E6%B3%95%E5%88%99.html">
+    <link itemprop="mainEntityOfPage" href="http://lasion.top/%E4%BD%BF%E7%94%A8python%E6%89%B9%E9%87%8F%E8%BD%AC%E6%8D%A2%E6%96%87%E4%BB%B6%E7%BC%96%E7%A0%81%E4%B8%BAUTF-8.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/header.jpg">
@@ -215,7 +210,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          python实现克莱姆法则
+          使用python批量转换文件编码为UTF-8
         </h1>
 
         <div class="post-meta">
@@ -224,24 +219,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-03-07 15:38:14" itemprop="dateCreated datePublished" datetime="2020-03-07T15:38:14+08:00">2020-03-07</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-10 23:08:24" itemprop="dateModified" datetime="2020-03-10T23:08:24+08:00">2020-03-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%9A%84%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">机器学习的数学基础</span></a>
-                </span>
+              <time title="创建时间：2020-04-01 10:14:38 / 修改时间：11:02:25" itemprop="dateCreated datePublished" datetime="2020-04-01T10:14:38+08:00">2020-04-01</time>
             </span>
 
           
@@ -260,8 +240,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/%E5%85%8B%E8%8E%B1%E5%A7%86%E6%B3%95%E5%88%99.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/%E5%85%8B%E8%8E%B1%E5%A7%86%E6%B3%95%E5%88%99.html" itemprop="commentCount"></span>
+    <a title="valine" href="/%E4%BD%BF%E7%94%A8python%E6%89%B9%E9%87%8F%E8%BD%AC%E6%8D%A2%E6%96%87%E4%BB%B6%E7%BC%96%E7%A0%81%E4%B8%BAUTF-8.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/%E4%BD%BF%E7%94%A8python%E6%89%B9%E9%87%8F%E8%BD%AC%E6%8D%A2%E6%96%87%E4%BB%B6%E7%BC%96%E7%A0%81%E4%B8%BAUTF-8.html" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -271,14 +251,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.2k</span>
+              <span>2.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -290,103 +270,29 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>本文介绍了克莱姆法则，并用pthon进行实现。克莱姆法则，又译克拉默法则（Cramer’s Rule）是线性代数中一个关于求解线性方程组的定理。它适用于变量和方程数目相等的线性方程组，对于多于两个或三个方程的系统，克莱姆的规则在计算上非常低效；与具有多项式时间复杂度的消除方法相比，其渐近的复杂度为O（n·n！）。</p>
+        <p>由于这两天换了IDE，在导入以前的工程的时候发现了一个大问题，由于以前脑残的我不知道改编码方式，导致出现了大量的GBK，这就很难受，要是一个两个还好说，可是这么多要是一个一个的改我会觉得现在的我比以前还脑残，于是乎，我就想用python批量的修改一下，然后就产生了这篇文章，其中好多不足的地方还请大佬指导</p>
 <a id="more"></a>
+<p><strong>本来一开始的思路还是比较清晰，觉得也比较简单，天真的认为用GBK的方式读取出文件内容，然后UTF8写入就好了，可是在实际的操作中我发现我就是太天真了，出现了大量的问题，比如说：</strong></p>
+<ul>
+<li><strong>怎么查看文件的编码方式</strong></li>
+</ul>
+<p><strong>好吧我承认就出现了这一个问题。</strong></p>
+<p><strong>那么遇到问题我们该怎么办呢，没错，Google，果然功夫不负会Google人，我看到了一个函数，就是chardet.detect()函数，当然要导入chardet模块，也就是pip，如果是Anaconda的环境当我没说，pip了不要打我。言归正传，这个函数是干嘛用的呢？</strong></p>
 <blockquote>
-<p><strong>注：本文对numpy对象使用append方法时均使用了深拷贝deepcopy，因为python中对象的赋值是按引用传递的，如果不使用深拷贝在append时会改变原有对象从而覆盖原先的值</strong></p>
-</blockquote>
-<h1 id="首先完成python模拟行列式运算"><a href="#首先完成python模拟行列式运算" class="headerlink" title="首先完成python模拟行列式运算"></a>首先完成python模拟行列式运算</h1><script type="math/tex; mode=display">
-\begin{vmatrix}
-{a_{11}}&{a_{12}}&{\cdots}&{a_1n}\\
-{a_{21}}&{a_{22}}&{\cdots}&{a_2n}\\
-{\vdots}&{\vdots}&{\ddots}&{\vdots}\\
-{a_{n1}}&{a_{n2}}&{\cdots}&{a_{nn}}\\
-\end{vmatrix}= \sum{(-1)^{t}}{a_{1p_{1}}a_{2p_{2}}}{\cdots}{a_{np_{n}}}</script><blockquote>
-<p>标注：t:&emsp;${p_1}{p_2}{p_3}{\cdots}{p_n}$ 的逆序数</p>
-</blockquote>
-<h2 id="公式分析"><a href="#公式分析" class="headerlink" title="公式分析"></a>公式分析</h2><p><strong>${p_1}{p_2}{p_3}{\cdots}{p_n}$从下标来看可以看作n个数的全排列，而t则是后面下标序列的逆序数，所以我们可以将他分成三个模块来实现，首先是求的我们所需的全排列序列，然后对该序列求逆序数，最后累加求和</strong></p>
-<h2 id="模块分析与实现"><a href="#模块分析与实现" class="headerlink" title="模块分析与实现"></a>模块分析与实现</h2><h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><p><strong>Anaconda 3 + Python 3.6.5 + Jupyter</strong></p>
-<h3 id="模块导入"><a href="#模块导入" class="headerlink" title="模块导入"></a>模块导入</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import copy</span><br></pre></td></tr></table></figure>
-<h3 id="全排列"><a href="#全排列" class="headerlink" title="全排列"></a>全排列</h3><ul>
-<li><p>从n个不同元素中任取m（m≤n）个元素，按照一定的顺序排列起来，叫做从n个不同元素中取出m个元素的一个排列。当m=n时所有的排列情况叫全排列。</p>
-<p>公式：全排列数f(n)=n!(定义0!=1)</p>
-</li>
+<p>这个函数会返回一个含有三个键值对的字典类型</p>
+<ul>
+<li>‘encoding’: 编码方式</li>
+<li>‘confidence’: 检测的正确率</li>
+<li>‘language’ : 语言</li>
 </ul>
-<p><a href="https://ae01.alicdn.com/kf/Hc6b02e38d7fe46a78ff3a32959efbd823.png" target="_blank" rel="noopener"><img src="https://ae01.alicdn.com/kf/Hc6b02e38d7fe46a78ff3a32959efbd823.png" alt="https://ae01.alicdn.com/kf/Hc6b02e38d7fe46a78ff3a32959efbd823.png"></a></p>
-<p>(深度优先搜索)采用递归的思路:先确定一个节点，然后后面的节点进行交换，在确定下一个节点，一层层递归，递归回溯时应将顺序交换回来，以便向其他子节点方向递归</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 全排列</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">permutations</span><span class="params">(n)</span>:</span></span><br><span class="line">    arr = [x <span class="keyword">for</span> x <span class="keyword">in</span> range(n)]</span><br><span class="line">    result =[]</span><br><span class="line">    dfs(arr,<span class="number">0</span>,len(arr),result)</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dfs</span><span class="params">(arr, begin, end,result)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> begin == end:</span><br><span class="line">        result.append(copy.deepcopy(arr))</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(begin,end):</span><br><span class="line">            arr[i],arr[begin] = arr[begin],arr[i]</span><br><span class="line">            dfs(arr,begin+<span class="number">1</span>,end,result)</span><br><span class="line">            arr[i],arr[begin] = arr[begin],arr[i]</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line">        <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
-<h3 id="逆序数"><a href="#逆序数" class="headerlink" title="逆序数"></a>逆序数</h3><ul>
-<li>在一个排列中，如果一对数的前后位置与大小顺序相反，即前面的数大于后面的数，那么它们就称为一个<strong>逆序</strong>。一个排列中逆序的总数就称为这个排列的<strong>逆序数</strong>。</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 逆序数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">inverse</span><span class="params">(arr)</span>:</span></span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(arr)):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(i):</span><br><span class="line">            <span class="keyword">if</span> arr[j] &gt; arr[i]:</span><br><span class="line">                count+=<span class="number">1</span></span><br><span class="line">                <span class="keyword">pass</span></span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line">        <span class="keyword">pass</span>    </span><br><span class="line">    <span class="keyword">return</span> count</span><br></pre></td></tr></table></figure>
-<h3 id="方阵计算"><a href="#方阵计算" class="headerlink" title="方阵计算"></a>方阵计算</h3><ul>
-<li>根据公式进行累加计算</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">det</span><span class="params">(matrix)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> matrix.shape[<span class="number">0</span>]!=matrix.shape[<span class="number">1</span>]:</span><br><span class="line">        print(<span class="string">'此矩阵不是方阵！'</span>)</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    permutation = permutations(matrix.shape[<span class="number">0</span>])</span><br><span class="line">    permutation = np.array(permutation)</span><br><span class="line">    result = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(permutation)):</span><br><span class="line">        a = <span class="number">1</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(matrix.shape[<span class="number">0</span>]):</span><br><span class="line">            a*=matrix[j][permutation[i][j]]</span><br><span class="line">        result += pow(<span class="number">-1</span>,inverse(permutation[i]))*a</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
-<h1 id="克莱姆法则-Cramer’s-rule"><a href="#克莱姆法则-Cramer’s-rule" class="headerlink" title="克莱姆法则 Cramer’s rule"></a>克莱姆法则 <em>Cramer’s rule</em></h1><p><strong>对以下方程组：</strong></p>
-<script type="math/tex; mode=display">
-\begin{cases}
-a_{11}x_1 + a_{12}x_2 + {\cdots} + a_{1n}x_n = b_1\\
-a_{21}x_1 + a_{22}x_2 + {\cdots} + a_{2n}x_n = b_2\\
-{\cdots}{\cdots}\\
-a_{n1}x_1 + a_{n2}x_2 + {\cdots} + a_{nn}x_n = b_n\\
-\end{cases}</script><p><strong><em><font color=red>如果线性方程组的系数行列式D不为零，即：</font></em></strong></p>
-<script type="math/tex; mode=display">
-D=\begin{vmatrix}
-{a_{11}}&{\cdots}&{a_{1n}}\\
-{\vdots}&{\ddots}&{\vdots}\\
-{a_{n1}}&{\cdots}&{a_{nn}}\\
-\end{vmatrix} {\neq} 0</script><p><strong><em><font color=red>那么方程组有唯一解：</font></em></strong></p>
-<script type="math/tex; mode=display">
-x_1 = \frac{D_1}{D} , x_2 = \frac{D_2}{D} , {\cdots} , x_n = \frac{D_n}{D}</script><p><strong><em><font color=red>其中&emsp;$D_j$(j=1,2,$\cdots$，n)&emsp;是把行列式D中第j列元素用方程组右端的常数项代替后所得到的n阶行列式，即：</font></em></strong></p>
-<script type="math/tex; mode=display">
-D_j=\begin{vmatrix}
-{a_{11}}&{\cdots}&a_{1，j-1}&b_1&{\cdots}&a_{1n}\\
-{\vdots}&&{\vdots}&{\vdots}&&{\vdots}\\
-{a_{n1}}&{\cdots}&a_{n，j-1}&b_1&{\cdots}&a_{nn}\\
-\end{vmatrix}</script><blockquote>
-<p><strong>对此我们做出如下约定：</strong></p>
-<ol>
-<li>d为系数矩阵作为函数的第一个参数</li>
-<li>b为方程组右端常数项组成的列向量作为函数的第二个参数</li>
-<li>d_i为公式中的&emsp;$D_j$(j=1,2,$\cdots$，n)&emsp;组成的三维矩阵</li>
-<li>返回由结果&emsp;$x_i$(j=i,2,$\cdots$，n)&emsp;组成的向量</li>
-</ol>
 </blockquote>
-<p><strong>实现代码：</strong></p>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cramer</span><span class="params">(d,b)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> d.shape[<span class="number">0</span>]!=d.shape[<span class="number">1</span>]:</span><br><span class="line">        print(<span class="string">'此矩阵不是方阵！'</span>)</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    <span class="keyword">if</span> det(d) == <span class="number">0</span>:</span><br><span class="line">        print(<span class="string">'系数方阵为0'</span>)</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    d_i = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(b.shape[<span class="number">0</span>]):</span><br><span class="line">        d_i.append(copy.deepcopy(d))</span><br><span class="line">        d_i[i][:,i] = b</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    x = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(b.shape[<span class="number">0</span>]):</span><br><span class="line">        x.append(det(d_i[i]) / det(d))</span><br><span class="line">    print(x)</span><br></pre></td></tr></table></figure>
-<p><strong>测试结果：</strong></p>
-<p>测试以下方程组：</p>
-<script type="math/tex; mode=display">
-\begin{cases}
-2x + y + z = 15\\
-x + 2y + z =16\\
-x + y + 2z =17\\
-\end{cases}</script><p>即：</p>
-<script type="math/tex; mode=display">
-\left[
-\begin{array}{ccc|c}
-2&1&1&15\\
-1&2&1&16\\
-1&1&2&17
-\end{array}
-\right]</script><p>索引函数的输入为：</p>
-<script type="math/tex; mode=display">
-d=\begin{vmatrix}
-2&1&1\\
-1&2&1\\
-1&1&2
-\end{vmatrix} \;\;\;\;\;\;\;\;\;\;\;\;\;\;
-b = \begin{vmatrix}
-15\\16\\17
-\end{vmatrix}</script><p>预测结果：</p>
-<script type="math/tex; mode=display">
-x = \begin{vmatrix}
-3&4&5
-\end{vmatrix}</script><p>运行结果：</p>
-<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d = np.array([[<span class="number">2</span>,<span class="number">1</span>,<span class="number">1</span>],[<span class="number">1</span>,<span class="number">2</span>,<span class="number">1</span>],[<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>]])</span><br><span class="line">b = np.array([<span class="number">15</span>,<span class="number">16</span>,<span class="number">17</span>])</span><br><span class="line">cramer(d,b)</span><br></pre></td></tr></table></figure>
-<table><tr><td bgcolor=fffffe>[3.0, 4.0, 5.0]</td></tr></table>
-
+<p><strong>是不是看到encoding后眼前一亮，这样取出encoding的值然后比较不知道是啥了，然后我就在一边感叹python的强大的第三方库的支持一边开始了对这个函数的测试，先建两个txt，然后脸滚键盘，保存的时候一个是UTF-8，一个是GBK，值得竹注意的是读取方式应该是二进制，也就是’rb’，接着就是兴致勃勃地Ctrl Shift F10，出现了惊人的一幕：</strong></p>
+<blockquote>
+<p><code>{&#39;encoding&#39;: &#39;utf-8&#39;, &#39;confidence&#39;: 0.99, &#39;language&#39;: &#39;&#39;}</code></p>
+</blockquote>
+<p><strong>看看，看看这美丽的单引号，然后直接和”utf-8”比较不就结束了，万万没想到，他竟然是False，我还以为我看错了，就疯狂Ctrl F5，等待奇迹的出现，功夫不负有心人，果然，奇迹没有出现，于是我type了一下，嗯，果然是str类型的，又试了下和”utf-8”比较不就结束了，没错，结果是True，你们听我解释，我昨天做的时候真不是这样的，不管了，写都写了，按昨天的思路来吧，大家凑活看吧（不要打我），现在我们假设他是False，并且类型是NoneType，并且转为str后是None，你们要相信我昨天真的是这样的！</strong></p>
+<p><strong>好了就这样吧，那既然是无法比较怎么办呢，没错，拿出一开始脸滚键盘的那两个测试文件来，用他们呢读取出的字典的值作比较不就好了（一说到这我就莫名的心痛），然后我们在想一下是把文件编码改为UTF-8，所以本来就是UTF-8的我们就不用管他，我都脸滚键盘的建测试文件了我还在意这些细节干嘛，不说了，难受，效果图也不贴了，直接上代码你们自己看吧。。。</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># coding utf-8</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> chardet</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获得所有java文件的路径,传入根目录路径</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">find_all_file</span><span class="params">(path: str)</span> -&gt; str:</span></span><br><span class="line">    <span class="keyword">for</span> root, dirs, files <span class="keyword">in</span> os.walk(path):</span><br><span class="line">        <span class="keyword">for</span> f <span class="keyword">in</span> files:</span><br><span class="line">            <span class="keyword">if</span> f.endswith(<span class="string">'.java'</span>):</span><br><span class="line">                fullname = os.path.join(root, f)</span><br><span class="line">                <span class="keyword">yield</span> fullname</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 判断是不是utf-8编码方式</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">judge_coding</span><span class="params">(path: str)</span> -&gt; dict:</span></span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'utf.txt'</span>, <span class="string">'rb'</span>) <span class="keyword">as</span> f:    <span class="comment"># 删除就行</span></span><br><span class="line">        utf = chardet.detect(f.read())  <span class="comment"># 同上</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> open(path, <span class="string">'rb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        c = chardet.detect(f.read())</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> c != utf:                        <span class="comment"># 改为 c != 'utf-8'</span></span><br><span class="line">        <span class="keyword">return</span> c</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改文件编码方式</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">change_to_utf_file</span><span class="params">(path: str)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> find_all_file(path):</span><br><span class="line">        c = judge_coding(i)</span><br><span class="line">        <span class="keyword">if</span> c:</span><br><span class="line">            change(i, c[<span class="string">'encoding'</span>])</span><br><span class="line">            print(<span class="string">"&#123;&#125; 编码方式已从&#123;&#125;改为 utf-8"</span>.format(i, c[<span class="string">'encoding'</span>]))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">change</span><span class="params">(path: str, coding: str)</span>:</span></span><br><span class="line">    <span class="keyword">with</span> open(path, <span class="string">'r'</span>, encoding=coding) <span class="keyword">as</span> f:</span><br><span class="line">        text = f.read()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">with</span> open(path, <span class="string">'w'</span>, encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(text)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看所有文件编码方式</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">check</span><span class="params">(path: str)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> find_all_file(path):</span><br><span class="line">        <span class="keyword">with</span> open(i, <span class="string">'rb'</span>) <span class="keyword">as</span> f:</span><br><span class="line">            print(chardet.detect(f.read())[<span class="string">'encoding'</span>], <span class="string">': '</span>, i)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    my_path = <span class="string">'C:\\WorkSpace'</span></span><br><span class="line">    change_to_utf_file(my_path)</span><br><span class="line">    <span class="comment"># check(my_path)</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
 
 	  	 
     </div>
@@ -423,7 +329,7 @@ x = \begin{vmatrix}
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://lasion.top/%E5%85%8B%E8%8E%B1%E5%A7%86%E6%B3%95%E5%88%99.html" title="python实现克莱姆法则">http://lasion.top/克莱姆法则.html</a>
+    <a href="http://lasion.top/%E4%BD%BF%E7%94%A8python%E6%89%B9%E9%87%8F%E8%BD%AC%E6%8D%A2%E6%96%87%E4%BB%B6%E7%BC%96%E7%A0%81%E4%B8%BAUTF-8.html" title="使用python批量转换文件编码为UTF-8">http://lasion.top/使用python批量转换文件编码为UTF-8.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -456,9 +362,6 @@ x = \begin{vmatrix}
           
           <div class="post-tags">
               <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
-              <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag"><i class="fa fa-tag"></i> 机器学习</a>
-              <a href="/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/" rel="tag"><i class="fa fa-tag"></i> 线性代数</a>
-              <a href="/tags/%E7%9F%A9%E9%98%B5/" rel="tag"><i class="fa fa-tag"></i> 矩阵</a>
           </div>
 
         
@@ -472,13 +375,10 @@ x = \begin{vmatrix}
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/python%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/python%E6%B1%82%E7%9F%A9%E9%98%B5%E7%9A%84%E9%80%86.html" rel="prev" title="python求矩阵的逆">
-      <i class="fa fa-chevron-left"></i> python求矩阵的逆
+    <a href="/Python%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html" rel="prev" title="Python基本数据类型">
+      <i class="fa fa-chevron-left"></i> Python基本数据类型
     </a></div>
-      <div class="post-nav-item">
-    <a href="/python%E7%9F%A9%E9%98%B5%E8%BF%90%E7%AE%97.html" rel="next" title="python实现基本的矩阵运算">
-      python实现基本的矩阵运算 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -539,7 +439,6 @@ x = \begin{vmatrix}
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#首先完成python模拟行列式运算"><span class="nav-number">1.</span> <span class="nav-text">首先完成python模拟行列式运算</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#公式分析"><span class="nav-number">1.1.</span> <span class="nav-text">公式分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模块分析与实现"><span class="nav-number">1.2.</span> <span class="nav-text">模块分析与实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#环境"><span class="nav-number">1.2.1.</span> <span class="nav-text">环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模块导入"><span class="nav-number">1.2.2.</span> <span class="nav-text">模块导入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全排列"><span class="nav-number">1.2.3.</span> <span class="nav-text">全排列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逆序数"><span class="nav-number">1.2.4.</span> <span class="nav-text">逆序数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方阵计算"><span class="nav-number">1.2.5.</span> <span class="nav-text">方阵计算</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#克莱姆法则-Cramer’s-rule"><span class="nav-number">2.</span> <span class="nav-text">克莱姆法则 Cramer’s rule</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
